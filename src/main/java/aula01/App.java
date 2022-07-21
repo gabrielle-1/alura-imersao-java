@@ -58,11 +58,7 @@ public class App {
 
         //Extrair os dados(parser) que vamos utilizar(título,imagem e classificação)
         var parser = new JsonParser();
-        try {
-            listaFilmes = parser.parse(body);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
+        listaFilmes = parser.parse(body);
 
         return listaFilmes;
     }
